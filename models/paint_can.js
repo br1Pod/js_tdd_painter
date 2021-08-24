@@ -11,7 +11,9 @@ PaintCan.prototype.checkIfEmpty = function (){
     }
 }
 
-
+PaintCan.prototype.emptySelf = function (){
+    this.volume = 0
+}
 
 
 module.exports = PaintCan;

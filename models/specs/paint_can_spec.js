@@ -20,8 +20,10 @@ describe('Paint Can', function () {
 
   });
 
-  xit('should be able to empty itself', function () {
-    
+  it('should be able to empty itself', function () {
+    paintCan.emptySelf();
+    const actual = paintCan.volume;
+    assert.deepStrictEqual(actual, 0)
   });
 
 });
