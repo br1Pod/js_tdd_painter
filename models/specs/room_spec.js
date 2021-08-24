@@ -3,14 +3,17 @@ const Room = require('../room.js');
 
 describe('Room', function () {
 
-  
+  let room;
 
   beforeEach(function () {
-  
+    room = new Room (100, false)
+      
   });
 
-  xit('should have an area in square meters', function () {
-    
+  it('should have an area in square meters', function () {
+    const actual = room.area;
+    assert.strictEqual(actual, 100)
+
   });
 
   xit('should start not painted', function () {
