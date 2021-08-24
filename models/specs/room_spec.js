@@ -21,7 +21,10 @@ describe('Room', function () {
     assert.strictEqual(actual, false)
   });
 
-  xit('should be able to be painted', function () {
+  it('should be able to be painted', function () {
+    room.canBePainted();
+    const actual = room.painted;
+    assert.strictEqual(actual, true)
   });
 
 });
